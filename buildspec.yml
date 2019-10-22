@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo build started on `date`
+      - sudo npm i npm@latest -g
+      - npm install -y
+      - export buildDate=$(date +%d%m%y-%H%M%S)
+  pre_build:
+    commands:
+      - export spcuiEnvironment='uace-spc-ui-dev'
+      - aws s3 sync s3://${spcuiEnvironment}/ s3://uace-spc-backups/${spcuiEnvironment}/$buildDate/
+      - aws s3 rm s3://${spcuiEnvironment}/ --recursive    
+  build:
+    commands:
+      - npm run build
+      - rm -f build/static/js/*.map
+      - rm -f build/static/css/*.map
+  post_build:
+    commands:
+      - aws s3 rm s3://${spcuiEnvironment} --recursive
+      - aws s3 cp --recursive build/ s3://${spcuiEnvironment}
+      - aws s3 rm s3://${spcuiEnvironment}/static/js/*.map
+      - echo Build Completed !!

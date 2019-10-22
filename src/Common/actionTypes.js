@@ -1,0 +1,3 @@
+export const SET_LOCALE = 'SET_LOCALE';
+export const SET_ACTIVE_SIDEBAR = 'SET_ACTIVE_SIDEBAR';
+export const SET_LOCATION = 'SET_LOCATION';

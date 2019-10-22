@@ -1,0 +1,18 @@
+{
+  "short_name": "TEST",
+  "name": "TEST Application",
+  "icons": [
+    {
+      "src": "/static/icons/icon-48x48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/static/icons/icon-96x96.png",
+      "sizes": "96x96"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#3870e4",
+  "background_color": "#3870e4"
+}

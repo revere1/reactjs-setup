@@ -1,0 +1,601 @@
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.printPage {
+  background-color: #ffffff;
+  width: 266mm;
+  min-height: 400mm;
+  padding: 20px;
+}
+
+.printHeader {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgba(234, 234, 234, 0.3);
+  overflow: hidden;
+}
+
+/* Custom */
+
+.dashTableHeaderCustom {
+  font-weight: 200 !important;
+  color: #ffffff !important;
+  background-color: #3870e4;
+  height: 58px;
+  font-size: 16px !important;
+  padding: 10px 7px !important;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.dashTableHeaderCustomCenter {
+  font-weight: 200 !important;
+  color: #ffffff !important;
+  background-color: #3870e4;
+  height: 58px;
+  font-size: 16px !important;
+  padding: 10px 7px !important;
+  box-sizing: border-box;
+  text-align: center !important;
+}
+
+.dashTableHeaderCustom:hover {
+  background-color: #1146b1;
+  color: #ffffff;
+}
+
+.dashTableHeaderCustomCenter:hover {
+  background-color: #1146b1;
+  color: #ffffff;
+}
+
+.dashTableHeaderCustomButton {
+  font-weight: 200 !important;
+  color: #ffffff !important;
+  background-color: #f79626;
+  text-align: center !important;
+  height: 58px;
+  font-size: 16px !important;
+  padding: 10px 15px !important;
+  box-sizing: border-box;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dashTableHeaderCustomButton:hover {
+  background-color: #f1740d;
+  color: #ffffff;
+}
+
+.loader {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* Dev VirtualTable */
+
+.numberindicator {
+  background: #3870e4;
+  padding: 5px;
+  margin-left: 5px;
+  color: #ffffff;
+  display: inline-block;
+  min-width: 16px;
+  text-align: center;
+  min-height: 16px;
+  line-height: 16px;
+  border-radius: 20px;
+}
+
+.devlinks {
+  text-decoration: none;
+  color: #3870e4;
+  font-weight: 500;
+}
+
+.customActiveRow {
+  background: url('./../activetable.png');
+  background-repeat: no-repeat;
+  background-size: 5px 100%;
+}
+
+.customSuccessRow {
+  background: url('./../successtable.png');
+  background-repeat: no-repeat;
+  background-size: 5px 100%;
+}
+
+.customWarningRow {
+  background: url('./../warningtable.png');
+  background-repeat: no-repeat;
+  background-size: 5px 100%;
+}
+
+.customErrorRow {
+  background: url('./../errortable.png');
+  background-repeat: no-repeat;
+  background-size: 5px 100%;
+}
+
+/* Charts */
+
+.dashChartsContainer {
+  width: 100%;
+  height: 200px;
+}
+
+/* Text color */
+.themeColorPrimary {
+  color: #3870e4;
+}
+
+.themeColorError {
+  color: #d3322d;
+}
+
+.themeColorwarning {
+  color: #f79626;
+}
+
+.themeColorSuccess {
+  color: #069c13;
+}
+
+.themeColorManual {
+  color: #ba68c8;
+}
+
+/* Background Color */
+.themeBackgroundError {
+  background-color: #d3322d !important;
+}
+
+.themeBackgroundwarning {
+  background-color: #f79626 !important;
+}
+
+.themeBackgroundSuccess {
+  background-color: #069c13 !important;
+}
+
+.themeProgressbar {
+  background: #f79626 !important;
+}
+
+/* Button Color */
+
+.errorButton {
+  background: #d3322d !important;
+  color: #ffffff !important;
+}
+
+.warningButton {
+  background: #f79626 !important;
+  color: #ffffff !important;
+}
+
+.successButton {
+  background: #069c13 !important;
+  color: #ffffff !important;
+}
+
+/* Button Color */
+
+.errorBatch {
+  background: #d3322d !important;
+  color: #ffffff !important;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.warningBatch {
+  background: #f79626 !important;
+  color: #ffffff !important;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.successBatch {
+  background: #069c13 !important;
+  color: #ffffff !important;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+/* Cell Holder */
+
+.customButtonHolder {
+  padding: 0 0px !important;
+  text-align: center !important;
+  white-space: nowrap;
+  width: 100%;
+  margin-left: -16px;
+}
+
+.floting {
+  position: absolute;
+  top: 40px;
+  right: 90px;
+}
+
+.themeTooltip {
+  background: #ffffff;
+  padding: 10px;
+  color: #a1a1a1;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 1px rgba(206, 206, 206, 0.5);
+  font-size: 0.8em;
+}
+
+.themeTooltipLight {
+  background: rgba(243, 243, 243, 0.85);
+  padding: 10px;
+  color: #363636;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+.themeTooltipPrimary {
+  background: rgba(56, 113, 228, 0.85);
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+.themeTooltipError {
+  background: rgba(212, 67, 62, 0.85);
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+/* recharts overwrite */
+
+.recharts-responsive-container {
+  z-index: 55 !important;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-size: 0.7em;
+  fill: #4b4b4b;
+}
+
+.recharts-cartesian-axis-tick-line {
+  stroke: #cfcfcf;
+}
+
+.recharts-cartesian-axis-line {
+  stroke: #cfcfcf;
+}
+
+.recharts-label {
+  font-size: 0.8em;
+  /* fill: #a1a1a1; */
+}
+
+.recharts-brush > rect {
+  stroke: #ffffff;
+}
+
+.recharts-brush-slide {
+  fill: #3870e4;
+  fill-opacity: 0.5;
+}
+
+.recharts-brush-texts {
+  fill: #3870e4;
+}
+
+.recharts-brush-traveller rect {
+  fill: #3870e4;
+}
+
+.recharts-brush-traveller line {
+  display: none;
+}
+
+.recharts-active-dot {
+  cursor: pointer;
+}
+
+.recharts-polar-angle-axis-tick-value {
+  fill: #a1a1a1;
+}
+
+/* Text Editor */
+
+.DraftEditor-editorContainer {
+  margin-bottom: 8px;
+}
+
+.public-DraftEditor-content {
+  min-height: 100px;
+  padding: 15px;
+}
+
+.commentView .public-DraftEditor-content {
+  min-height: auto;
+  padding: 0;
+}
+
+.commentView .DraftEditor-editorContainer {
+  background: none;
+  color: #212121;
+  font-size: 16px;
+}
+
+/* Dynamic From */
+
+.verticalDivider {
+  background: #cfcfcf;
+  width: 1px;
+  height: 45px;
+}
+
+.breadnoteIcon {
+  color: #ffffff;
+  font-size: 38px !important;
+  margin-right: 10px;
+}
+
+.barnoteIcon {
+  color: #ffffff;
+  font-size: 38px !important;
+  margin-right: 10px;
+}
+
+/* Dashboard */
+
+.dashboard {
+  background-image: url('./../dashback.png');
+  background-position: center;
+  background-size: cover;
+  max-width: 460px;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 0 12px 2px rgba(51, 51, 51, 0.3);
+}
+.dashboardTitle {
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0;
+}
+.dashboardSubs {
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(12, 34, 77, 0.7);
+}
+.dashboardSubsSmall {
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+.dashboardBigText {
+  font-size: 5.5rem;
+  margin: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.dashboardBigText span {
+  font-size: 1rem;
+  margin: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hiddenElement {
+  display: none !important;
+  clear: both;
+  visibility: hidden;
+}
+
+.breadcrumbs {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  flex: 1;
+  align-items: center;
+}
+
+.breadcrumbeach {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #a1a1a1;
+  min-width: 20px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.breadcrumblink {
+  text-decoration: none;
+  color: #a1a1a1;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.breadcrumblink:hover {
+  color: #3870e4;
+}
+
+.breadcrumbIcons {
+  color: #a1a1a1;
+}
+
+@media only screen and (max-width: 990px) {
+  .dashboard {
+    margin: 15px;
+    max-width: none;
+  }
+}
+
+.cascadeHierarchy {
+  margin: 18px;
+  padding: 0;
+}
+.cascadeHierarchy:not(:empty):before,
+.cascadeHierarchy:not(:empty):after,
+.cascadeHierarchy ul:not(:empty):before,
+.cascadeHierarchy ul:not(:empty):after,
+.cascadeHierarchy li:not(:empty):before,
+.cascadeHierarchy li:not(:empty):after {
+  display: block;
+  position: absolute;
+  content: '';
+}
+.cascadeHierarchy ul,
+.cascadeHierarchy li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.cascadeHierarchy li {
+  list-style: none;
+}
+.cascadeHierarchy li {
+  margin-left: 50px;
+}
+.cascadeHierarchy li:before {
+  border-left: 2px solid rgba(202, 219, 255, 0.8);
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: -25px;
+}
+.cascadeHierarchy li:after {
+  border-top: 2px solid rgba(202, 219, 255, 0.8);
+  width: 25px;
+  left: -25px;
+  top: 45px;
+}
+.cascadeHierarchy li:last-child:before {
+  height: 45px;
+  top: 0;
+}
+.cascadeHierarchy > li:first-child:before {
+  top: 45px;
+}
+.cascadeHierarchy > li:only-child {
+  margin-left: 0;
+}
+.cascadeHierarchy > li:only-child:before,
+.cascadeHierarchy > li:only-child:after {
+  content: none;
+}
+
+/* edit-buttons on Scoring Guidlines */
+
+.edit-panel {
+  display: flex;
+  position: absolute;
+  max-height: 35px;
+  bottom: -35px;
+  right: 0;
+}
+.edit-btn {
+  z-index: 99;
+  background-color: #fff;
+  border-radius: 8px;
+  padding-top: 3px;
+  outline: none;
+  cursor: pointer;
+}
+.edit-ok {
+  margin-left: 5px;
+  color: #3870e4;
+}
+
+.edit-cancel {
+  color: #f44336;
+}
+
+/* Files Preview */
+.fileType {
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fileType img {
+  width: auto;
+  margin: 0;
+  height: 40px;
+}
+
+.fileViewWrap {
+  width: 100%;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  height: 100%;
+  outline: hidden;
+}
+
+.fileViewClose {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  left: auto;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+.pg-viewer-wrapper {
+  overflow: auto !important;
+}
